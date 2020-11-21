@@ -1,0 +1,321 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+nav {
+  position: fixed;
+  background-color: #340968;
+  height: 6rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav img {
+  height: 5rem;
+  width: auto;
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+nav form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3em;
+}
+
+nav form input {
+  width: 25rem;
+  height: 100%;
+  margin: 0 1rem;
+  font-size: 1.4em;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.33s;
+  transition: all 0.33s;
+}
+
+nav form input:focus {
+  outline: none;
+  width: 32rem;
+}
+
+nav form button {
+  position: absolute;
+  height: 80%;
+  padding: 0 1em;
+  font-size: 1.6em;
+  background-color: transparent;
+  color: #24292e;
+  right: 5;
+  border: none;
+}
+
+nav form button:focus {
+  outline: none;
+}
+
+.profile-repos-wrapper {
+  padding-top: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-repos-wrapper .profile-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile {
+  padding: 3em 5em;
+  max-width: 35em;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile img {
+  width: 23em;
+  height: 23em;
+  border-radius: 50%;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile h1 {
+  font-size: 2.6em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile h3 {
+  color: #91969c;
+  line-height: 1em;
+  font-size: 1.6em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile p {
+  padding: 1em 0;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile a button {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.3em 3em;
+  border: 2px solid #c6c7c7;
+  border-radius: 3px;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .follower,
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .following {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 0.2em 0 0;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .follower i,
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .following i {
+  padding: 0.1em;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .follower strong,
+.profile-repos-wrapper .profile-wrapper #profile .following-wrapper .following strong {
+  margin: 0 0.3em;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .location {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .twitter {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.6em 0;
+}
+
+.profile-repos-wrapper .profile-wrapper #profile .twitter a {
+  text-decoration: none;
+  color: #000;
+}
+
+.profile-repos-wrapper .repos-wrapper {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .repo-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .repo-head p,
+.profile-repos-wrapper .repos-wrapper #repositories .repo-head i {
+  padding: 0.2em 0.3em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .repo-head #count {
+  background-color: #e8eaec;
+  border-radius: 50%;
+  padding: 0.3em 0.5em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper {
+  border: 2em solid transparent;
+  padding-bottom: 20em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #91969c;
+  padding: 1.6em 0;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-left a {
+  text-decoration: none;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-left a h1 {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-left p {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 40em;
+  line-height: 1.6em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-right .fork,
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-right .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.5em;
+  padding: 0.3em 0.7em;
+  border: 2px solid #d9dbdb;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  p: first-child;
+  p-font-size: 1em;
+  p-font-weight: 600;
+  p-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  p-padding: 0 0.5em;
+}
+
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-right .fork p:last-child,
+.profile-repos-wrapper .repos-wrapper #repositories .uniRepo-wrapper .uniRepo .uniRepo-right .star p:last-child {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0 0.8em;
+  color: #fff;
+  background-color: #000;
+  font-size: 1.6em;
+  font-weight: 200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.github-search {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2em;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.searchMessage {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

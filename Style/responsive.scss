@@ -1,0 +1,33 @@
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  html {
+    font-size: 45%;
+  }
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .profile-repos-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    .profile-wrapper {
+      flex: 0;
+      justify-content: flex-start;
+      #profile {
+        min-width: 100%;
+        img {
+          float: left;
+          width: 18em;
+          height: 18em;
+          margin: 2em;
+        }
+        a{
+            button{
+                padding: 0.3em 3em;
+            }
+        }
+      }
+    }
+  }
+  
+}

@@ -142,7 +142,7 @@ class UI {
 const github = new Github();
 const ui = new UI();
 
-//Event
+
 input.addEventListener('keyup', (e) => {
   if (input.value.trim() !== '') {
 
